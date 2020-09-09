@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Elementary Challenges</title>
+<meta name="viewport" content="width=device-width">
+<meta name="monetization" content="$coil.xrptipbot.com/IaQo0r8KT6aT9SCXmCK-ag">
+<!--delete from here-->
+<link rel="stylesheet" href="game.css">
+<script src="show-time.js" defer></script>
+<script src="audio.js" defer></script>
+<script src="play.js" defer></script>
+<script src="air.js" defer></script>
+<script src="earth.js" defer></script>
+<script src="fire.js" defer></script>
+<script src="water.js" defer></script>
+<script src="game.js" defer></script>
+<!--delete to here-->
+<!--delete line
+<style>
+insert min.css
+</style>
+delete line-->
+</head><body>
+<section id="intro">
+<h1>Elementary Challenges</h1><button id="skip" data-action="skip">Skip intro</button>
+<p class="a">Welcome to the Elementary Challenges!</p>
+<p class="b d1">What elements? What challenges?</p>
+<p class="a d2">The elements are the four classical elements, Air, Earth, Water, and Fire. For each, I have a different type of game for you, and you have one minute for each to complete that game.</p>
+<p class="b d3">A minute? That’s too short!</p>
+<p class="a d4">Well, okay. I’ll increase your limit to a minute plus one second, which makes 4:04 total. And I’ll just count the total time, so you may take longer than a minute for an element if you are faster with another.</p>
+<p class="b d5">Do you have anything special for Coil users?</p>
+<p class="a d6">Yes! WebMonetization supporters can get a second chance once in the game. So if you think you took too long for one element, you can retry it.</p>
+<p class="b d7">That sounds like a nice extra. Anything else I should know before I start?</p>
+<p class="a d8">There are two modes: The normal mode and an easy mode, where some of the games are a bit shorter. For the first time I advice you to start with the easy one, and once you mastered it try the normal mode. So let’s start!</p>
+<p class="d8"><button data-action="easy">Start easy mode</button></p>
+<p class="d8"><button data-action="intro">Start normal mode</button></p>
+</section>
+<section id="intro-air" hidden>
+<h1 style="color: #88f">Air</h1>
+<p class="a">You’re going to fly an airplane!</p>
+<p class="b d1">How do I steer?</p>
+<p class="a d2">The autopilot will take care of most things, you just have to use the arrow keys (or touch the screen above or below the plane) to rise and sink. Oh, and you should avoid the clouds. Your Cessna 404 isn’t really meant to fly through them.</p>
+<p class="b d4">Are you obsessed by 404?</p>
+<p class="a d5">What makes you think so? Anyway, are you ready?</p>
+<p class="ls-hint d5">Hint: Change the orientation to landscape, this will be much better during the game</p>
+<p class="d5"><button data-action="air">I’m ready</button></p>
+</section>
+<section id="intro-earth" hidden>
+<h1 style="color: #b73">Earth</h1>
+<p class="a">Use your mouse (or your finger on the touchscreen) to dig through earth!</p>
+<p class="b d1">And what exactly should I do?</p>
+<p class="a d2">Every valley shall be lifted up, and every mountain and hill made be low; the uneven ground shall become level, and the rough places a plain.</p>
+<p class="b d3">What?</p>
+<p class="a d4">That’s a quote from the Bible. Isaiah 40:4, to be precise.</p>
+<p class="b d5">Are you obsessed by 404?</p>
+<p class="a d6">What makes you think so? Anyway, are you ready?</p>
+<p class="ls-hint d6">Hint: Change the orientation to landscape, this will be much better during the game</p>
+<p class="d6"><button data-action="earth">I’m ready</button></p>
+</section>
+<section id="intro-water" hidden>
+<h1 style="color: #00f">Water</h1>
+<p class="a">Let’s see whether your brain is as quick as your fingers! For water, I have a puzzle for you! You have to measure certain amounts of water, but you don’t have any measuring instruments.</p>
+<p class="b d2">Then how can I measure the water?</p>
+<p class="a d3">You have several buckets, and you know how much water they can hold. You have to pour water between them, until you reach the result. For example, in the first level you will be given a full bucket of 8 liters, and two empty ones of 3 and 5. You are required to measure 4 liters twice, that is to make sure the buckets are filled 4-0-4.</p>
+<p class="b d5">Are you obsessed by 404?</p>
+<p class="a d6">What makes you think so? Anyway, are you ready?</p>
+<p class="ls-hint d6">Hint: Change the orientation to landscape, this will be much better during the game</p>
+<p class="d6"><button data-action="water">I’m ready</button></p>
+</section>
+<section id="intro-fire" hidden>
+<h1 style="color: #f00">Fire</h1>
+<p class="a">Let’s burn a barrel of Diesel fuel, that’ll make a nice fire!</p>
+<p class="b d1">How do I do this?</p>
+<p class="a d2">Press the spacebar (or touch the screen) to make the flame larger, release to make it smaller. But make sure the fire doesn’t get too large, otherwise the emergency stop will switch it off completely, and you have to wait a bit to start again. By the way, did you know that the autoignition point of Diesel fuel is 404 °F?</p>
+<p class="b d4">Are you obsessed by 404?</p>
+<p class="a d5">What makes you think so? Anyway, are you ready?</p>
+<p class="ls-hint d5">Hint: Change the orientation to landscape, this will be much better during the game</p>
+<p class="d5"><button data-action="fire">I’m ready</button></p>
+</section>
+<section id="outro-next" hidden>
+<p class="a">You finished the element in <span class="time"></span>, so you still have <span class="remaining"></span> left. Let’s see whether this is enough.</p>
+<p><button data-action="intro">Continue</button></p>
+</section>
+<section id="outro-next-retry" hidden>
+<p class="a">You finished the element in <span class="time"></span>, so you still have <span class="remaining"></span> left. Let’s see whether this is enough. Or do you want to retry this element?</p>
+<p><button data-action="intro">Continue</button></p>
+<p><button data-action="retry">Retry</button></p>
+</section>
+<section id="outro-fail" hidden>
+<p class="a">You didn’t finish the game in time, sorry. You have to restart from the beginning. Let’s see whether you succeed this time.</p>
+<p><button data-action="reload">Restart</button></p>
+</section>
+<section id="outro-fail-retry" hidden>
+<p class="a">You didn’t finish the game in time, sorry. But you still have the second chance. So retry this element, and let’s see whether you finish in time now.</p>
+<p><button data-action="retry">Retry</button></p>
+</section>
+<section id="outro-win" hidden>
+<h1>You win!</h1>
+<p class="a">You did it! You finished all four challenges in <span class="time"></span>! Congratulations!<br>Can you finish them faster? Play again!</p>
+<p><button data-action="reload">Play again</button></p>
+</section>
+<section id="outro-win-easy" hidden>
+<h1>You win!</h1>
+<p class="a">You did it! You finished all four challenges in <span class="time"></span>! Congratulations!<br>Can you finish them in the normal mode, too? Play again!</p>
+<p><button data-action="reload">Play again</button></p>
+</section>
+<section id="game" hidden>
+<header><span id="title"></span> <canvas id="time" moz-opaque width="79" height="40"></canvas> <span id="level"></span> <label><input type="checkbox" checked="true" id="audio"><svg title="Turn sound off" class="on" width="40" height="40" viewBox="0 0 30 30"><path fill="#fff" d="M15 8v8.55c-.94-.54-2.1-.75-3.33-.32-1.34.48-2.37 1.67-2.61 3.07a4.007 4.007 0 0 0 4.59 4.65c1.96-.31 3.35-2.11 3.35-4.1V10h2c1.1 0 2-.9 2-2s-.9-2-2-2h-2c-1.1 0-2 .9-2 2z"/></svg><svg title="Turn sound on" class="off" width="40" height="40" viewBox="0 0 30 30"><path fill="#fff" d="M17 12.61V10h2c1.1 0 2-.9 2-2s-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3.61l2 2zM8.12 6.56a.996.996 0 1 0-1.41 1.41l8.29 8.3v.28c-.94-.54-2.1-.75-3.33-.32-1.34.48-2.37 1.67-2.61 3.07a4.007 4.007 0 0 0 4.59 4.65c1.96-.31 3.35-2.11 3.35-4.1v-1.58l5.02 5.02a.996.996 0 1 0 1.41-1.41L8.12 6.56z"/></svg></label></header>
+<canvas id="canvas" moz-opaque></canvas>
+</section>
+<!--delete line
+<script>
+insert min.js
+</script>
+delete line-->
+</body></html>

@@ -1,0 +1,192 @@
+html {
+	font-family: sans-serif;
+	overscroll-behaviour: none;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+section {
+	max-width: 60em;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	margin: 1em;
+	padding: 1em;
+}
+
+.a,
+.b {
+	border: solid thin;
+	background: #eee;
+	border-radius: 1em;
+	position: relative;
+}
+
+.a::after,
+.b::after {
+	content: "";
+	display: block;
+	width: 1em;
+	height: 1em;
+	background: #eee;
+	border: solid thin;
+	border-top: none;
+	border-left: none;
+	position: absolute;
+	transform: rotate(45deg);
+	bottom: -9px;
+}
+
+.a::after {
+	left: 2em;
+}
+
+.b::after {
+	right: 2em;
+}
+
+.a {
+	text-align: left;
+	margin-right: 10em;
+}
+
+.b {
+	text-align: right;
+	margin-left: 10em;
+}
+
+#game {
+	background: black;
+	color: white;
+	max-width: none;
+	height: 100%;
+}
+
+header {
+	text-align: center;
+	font: 24px monospace;
+	position: relative;
+	margin: auto;
+	max-width: 1024px;
+}
+
+#time {
+	margin: 0 2em;
+	vertical-align: middle;
+}
+
+#canvas {
+	display: block;
+	margin: auto;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.grab {
+	cursor: -moz-grab;
+	cursor: grab;
+}
+
+.grabbing {
+	cursor: -moz-grabbing;
+	cursor: grabbing;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	height: 40px;
+}
+
+#audio,
+#audio:checked ~ .off,
+#audio:not(:checked) ~ .on {
+	display: none;
+}
+
+@media (min-width: 512px) {
+	.ls-hint {
+		display: none;
+	}
+}
+
+@media (orientation: landscape) {
+	.ls-hint {
+		display: none;
+	}
+}
+
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+section > p {
+	animation: 1s fadein both;
+}
+
+.d1 {
+	animation-delay: 2s;
+}
+
+.d2 {
+	animation-delay: 4s;
+}
+
+.d3 {
+	animation-delay: 6s;
+}
+
+.d4 {
+	animation-delay: 8s;
+}
+
+.d5 {
+	animation-delay: 10s;
+}
+
+.d6 {
+	animation-delay: 12s;
+}
+
+.d7 {
+	animation-delay: 14s;
+}
+
+.d8 {
+	animation-delay: 16s;
+}
+
+#skip {
+	float: right;
+}
+
+.skip #skip {
+	display: none;
+}
+
+.skip p {
+	animation: none;
+}
